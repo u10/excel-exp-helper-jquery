@@ -3,6 +3,10 @@ body {
   line-height: 1.1em;
 }
 
+.CodeMirror-hints {
+  z-index: 1000 !important;
+}
+
 #source {
   padding: 8px;
   width: 96%;
