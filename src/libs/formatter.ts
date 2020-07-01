@@ -73,6 +73,7 @@ function parseCode (code: string) {
         word += c
     }
   }
+  if (word) arr.push(word)
   return arr
 }
 
