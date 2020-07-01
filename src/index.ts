@@ -104,7 +104,7 @@ $(function() {
         if ($('.tooltipster-show').length > 0) {
           return false
         }
-        key = $(helper.origin).text()
+        key = $(helper.origin).text().toUpperCase()
         instance.content($help.find("[name='" + key + "']").parents('p').html() + ("<br><br><a href='ExcelFuncManual.html#" + key + "' target='_blank' style='color: red'>[查看]</a> ") + ("<a href='https://baidu.com/s?wd=excel 函数 " + key + "' target='_blank' style='color: red'>[百度]</a><br>"))
         return true
       }

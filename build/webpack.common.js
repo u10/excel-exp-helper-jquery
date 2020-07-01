@@ -1,5 +1,4 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -37,7 +36,6 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Excel Exp Helper',
       template: path.join(__dirname, '..', 'src', 'index.html')
