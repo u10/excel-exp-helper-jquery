@@ -38,7 +38,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Excel Exp Helper',
-      template: path.join(__dirname, '..', 'src', 'index.html')
+      template: path.join(__dirname, '..', 'src', 'index.html'),
+      filename: path.join(__dirname, '..', 'dist', 'ExcelExpHelper.html'),
     }),
     new HtmlWebpackPlugin({
       title: 'Excel Func Manual',
